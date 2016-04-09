@@ -1,0 +1,258 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:background="@drawable/bg_shattered"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin" tools:context=".View.MainActivity">
+
+
+
+    <ImageButton
+        android:layout_width="40dp"
+        android:layout_height="60dp"
+        android:id="@+id/hand0"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"/>
+
+    <ImageButton
+        android:layout_width="40dp"
+        android:layout_height="60dp"
+        android:id="@+id/hand1"
+        android:layout_alignBottom="@+id/hand0"
+        android:layout_toRightOf="@+id/hand0"
+        android:layout_toEndOf="@+id/hand0"/>
+
+    <ImageButton
+        android:layout_width="40dp"
+        android:layout_height="60dp"
+        android:id="@+id/hand2"
+        android:layout_alignBottom="@+id/hand1"
+        android:layout_toRightOf="@+id/hand1"
+        android:layout_toEndOf="@+id/hand1"/>
+
+    <ImageButton
+        android:layout_width="40dp"
+        android:layout_height="60dp"
+        android:id="@+id/hand3"
+        android:layout_alignBottom="@+id/hand2"
+        android:layout_toRightOf="@+id/hand2"
+        android:layout_toEndOf="@+id/hand2"/>
+
+    <ImageButton
+        android:layout_width="40dp"
+        android:layout_height="60dp"
+        android:id="@+id/hand4"
+        android:layout_alignBottom="@+id/hand3"
+        android:layout_toRightOf="@+id/hand3"
+        android:layout_toEndOf="@+id/hand3"/>
+
+    <ImageView
+        android:layout_width="40dp"
+        android:layout_height="60dp"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:id="@+id/LabId0"
+        android:layout_centerVertical="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <ImageView
+        android:layout_width="40dp"
+        android:layout_height="60dp"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:id="@+id/LabId1"
+        android:layout_alignBottom="@+id/LabId0"
+        android:layout_toRightOf="@+id/LabId0"
+        android:layout_toEndOf="@+id/LabId0" />
+
+    <ImageView
+        android:layout_width="40dp"
+        android:layout_height="60dp"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:id="@+id/LabId2"
+        android:layout_marginLeft="-10dp"
+        android:layout_alignTop="@+id/LabId1"
+        android:layout_toRightOf="@+id/LabId1"
+        android:layout_toEndOf="@+id/LabId1" />
+
+    <ImageView
+        android:layout_width="40dp"
+        android:layout_height="60dp"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:id="@+id/LabId3"
+        android:layout_marginLeft="-10dp"
+        android:layout_alignTop="@+id/LabId2"
+        android:layout_toRightOf="@+id/LabId2"
+        android:layout_toEndOf="@+id/LabId2" />
+    <ImageView
+        android:layout_width="40dp"
+        android:layout_height="60dp"
+        android:layout_marginLeft="-10dp"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:id="@+id/LabId4"
+        android:layout_alignTop="@+id/LabId3"
+        android:layout_toRightOf="@+id/LabId3"
+        android:layout_toEndOf="@+id/LabId3" />
+    <ImageView
+        android:layout_width="40dp"
+        android:layout_height="60dp"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:layout_marginLeft="-10dp"
+        android:id="@+id/LabId5"
+        android:layout_alignTop="@+id/LabId4"
+        android:layout_toRightOf="@+id/LabId4"
+        android:layout_toEndOf="@+id/LabId4" />
+    <ImageView
+        android:layout_width="40dp"
+        android:layout_height="60dp"
+        android:layout_marginLeft="-10dp"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:id="@+id/LabId6"
+        android:layout_alignTop="@+id/LabId5"
+        android:layout_toRightOf="@+id/LabId5"
+        android:layout_toEndOf="@+id/LabId5" />
+
+    <ImageView
+        android:layout_width="40dp"
+        android:layout_height="60dp"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:id="@+id/LabId7"
+        android:layout_alignTop="@+id/LabId6"
+        android:layout_alignRight="@+id/LabId6"
+        android:layout_alignEnd="@+id/LabId6"
+        android:layout_alignBottom="@+id/LabId6"
+        android:backgroundTint="#3dbfff" />
+
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="150dp"
+        android:src="@drawable/backofcard"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:id="@+id/Deck"
+        android:layout_below="@+id/LabId0"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="25dp" />
+
+    <ImageView
+        android:layout_width="30dp"
+        android:layout_height="45dp"
+        android:text=""
+        android:layout_marginRight="185dp"
+        android:id="@+id/discardPileId"
+        android:layout_alignParentTop="true"
+        android:layout_alignRight="@+id/Deck"
+        android:layout_alignEnd="@+id/Deck" />
+
+    <TextView
+        android:layout_width="20dp"
+        android:layout_height="30dp"
+        android:text="0"
+        android:textSize="10dp"
+        android:textColor="#ffffff"
+        android:paddingLeft="2dp"
+        android:id="@+id/doorIdRed"
+        android:background="@drawable/reddoor"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+
+    <TextView
+        android:layout_width="20dp"
+        android:layout_height="30dp"
+        android:text="0"
+        android:textSize="10dp"
+        android:textColor="#ffffff"
+        android:paddingLeft="2dp"
+        android:id="@+id/doorIdBlue"
+        android:background="@drawable/bluedoor"
+        android:layout_below="@+id/doorIdRed"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="20dp"
+        android:layout_height="30dp"
+        android:text="0"
+        android:textSize="10dp"
+        android:textColor="#ffffff"
+        android:paddingLeft="2dp"
+        android:id="@+id/doorIdGreen"
+        android:background="@drawable/greendoor"
+        android:layout_alignBottom="@+id/doorIdBlue"
+        android:layout_toRightOf="@+id/doorIdBlue"
+        android:layout_toEndOf="@+id/doorIdBlue" />
+
+    <TextView
+        android:layout_width="20dp"
+        android:layout_height="30dp"
+        android:text="0"
+        android:textSize="10dp"
+        android:textColor="#ffffff"
+        android:paddingLeft="2dp"
+        android:background="@drawable/browndoor"
+        android:id="@+id/doorIdBrown"
+        android:layout_above="@+id/doorIdBlue"
+        android:layout_toRightOf="@+id/doorIdRed"
+        android:layout_toEndOf="@+id/doorIdRed" />
+
+
+    <TextView
+        android:layout_width="20dp"
+        android:layout_height="30dp"
+        android:id="@+id/nightmareId"
+        android:background="@drawable/nightmare"
+        android:text="0"
+        android:textSize="10dp"
+        android:textColor="#ffffff"
+        android:paddingLeft="2dp"
+        android:layout_alignTop="@+id/doorIdBrown"
+        android:layout_toLeftOf="@+id/LabId2"
+        android:layout_toStartOf="@+id/LabId2" />
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:id="@+id/crystalBall"
+        android:background="@drawable/crystalball"
+        android:layout_below="@+id/discardPileId"
+        android:layout_alignLeft="@+id/Deck"
+        android:layout_alignStart="@+id/Deck" />
+
+    <ImageView
+        android:layout_width="150dp"
+        android:layout_height="75dp"
+        android:id="@+id/dicardPile"
+        android:background="@drawable/discardpile"
+        android:layout_marginRight="25dp"
+        android:layout_marginEnd="25dp"
+        android:layout_below="@+id/discardPileId"
+        android:layout_toLeftOf="@+id/crystalBall"
+        android:layout_toStartOf="@+id/crystalBall" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Play Card"
+        android:id="@+id/playCard"
+        android:autoText="false"
+        android:background="#9bfff60f"
+        android:longClickable="false"
+        android:textStyle="bold"
+        android:singleLine="false"
+        android:capitalize="characters"
+        android:gravity="center_vertical|center_horizontal"
+        android:layout_alignLeft="@+id/dicardPile"
+        android:layout_alignStart="@+id/dicardPile"
+        android:layout_below="@+id/dicardPile"
+        android:layout_alignRight="@+id/dicardPile"
+        android:layout_alignEnd="@+id/dicardPile"
+        android:layout_marginTop="15dp"
+        android:layout_above="@+id/hand4" />
+
+
+</RelativeLayout>
